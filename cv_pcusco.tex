@@ -1,0 +1,239 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% Modified:
+% Pol Cuscó
+% Bibliography works with bibtex 3.3+ and biber.
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the
+                              % square bracket to remove colors from
+                              % this template for printing
+
+\usepackage{fontawesome}
+
+%\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+\newfontfamily{\FA}{FontAwesome}
+
+% Your name and current job title/field
+\header{pol}{cuscó}{bioinformatician \&\& machine learning geek}
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+  \section{contact}
+  %{\FA \faUser}
+  %Pol Cuscó Pons
+  %{\FA \faEnvelope}
+  \includegraphics[scale=0.03]{emaillogo.jpeg}
+  \href{mailto:polcusco@gmail.com}{polcusco@gmail}
+  %{\FA \faLinkedinSign}
+  \includegraphics[scale=0.02]{linkedinlogo.jpeg}
+  \href{http://www.linkedin.com/in/pol-cuscó-80246963}{linkedin/pol-cusco}
+  \includegraphics[scale=0.07]{researchgatelogo.png}
+  \href{https://www.researchgate.net/profile/Pol\_Cusco2}{researchgate/Pol\_Cusco2}
+  %{\FA \faGithubSign}
+  \includegraphics[scale=0.08]{githublogo.jpeg}
+  \href{https://github.com/nanakiksc}{github.com/nanakiksc}
+  \includegraphics[scale=0.6]{phonelogo.png}
+  %{\FA \faPhone}
+  +34 684 200 939
+
+  \section{languages}
+  catalan \& spanish
+  english
+  portuguese
+  \section{programming}
+  {\color{red} \FA \faHeart} R
+  Python
+  C \& C\#
+  HTML \& CSS
+  Shell scripting
+  \LaTeX
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{interests}
+
+genomics, machine learning, big data, data visualization
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+
+\entry
+{since 2013}
+{PhD {\normalfont in Biomedicine}}
+{Universitat Pompeu Fabra}
+{\emph{Machine learning approach to the study of chromatin}\\
+\href{https://www.tdx.cat/handle/10803/565685}{{\FA \faExternalLink} Thesis.}}
+
+\entry
+{2010--2011}
+{MSc {\normalfont in Pharmaceutical Industry \& Biotechnology}}
+{Universitat Pompeu Fabra}
+{}
+
+\entry
+{2005--2010}
+{BSc {\normalfont in Biology}}
+{Universitat Pompeu Fabra}
+{Specialization in Human Biology}
+
+
+\entry
+{2012--2013}
+{Research Scholar}
+{Massachusetts Institute of Technology, Cambridge (MA)}
+{I was enrolled at the Department of Mechanical Engineering,
+  where I conducted research on autonomous underwater vehicles and
+  underwater wireless communications.}
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\begin{entrylist}
+
+  \entry
+    {2019}
+    {Gastrointestinal and Endocrine Tumor Group}
+    {Vall d'Hebron Institute of Oncology}
+    {\emph{Bioinformatician}\\
+    I developed and maintained NGS analysis pipelines,
+    working mostly with whole-exome sequencing data from both
+    tumors and cfDNA. I also wrote scripts for custom
+    analyses and performed data visualization tasks.
+    }
+  \entry
+    {2017--2019}
+    {Bioinformatics Unit}
+    {Vall d'Hebron Institute of Oncology}
+    {\emph{Bioinformatician}\\
+    I also worked with different research groups in the institute
+    and gave them bioinformatics support. I helped them decide
+    which data analyses they needed in their projects and then
+    I conducted them. Is was also my responsibility to
+    communicate the results of such analyses to help guide
+    their research.
+    }
+  \entry
+    {2013--2017}
+    {Genome Architecture Lab}
+    {Centre for Genomic Regulation}
+    {\emph{PhD student}\\
+    I worked from raw genomics data, especially ChIP-seq.
+    I used both supervised
+    and unsupervised machine learning methods and developed of our
+    own (see publications). I have a solid grasp of best practices in
+    machine learning and how to avoid common pitfalls (see
+    publications).\\
+    \href{http://www.genomearchitecture.com}{{\FA \faExternalLink} Lab website.}}
+\end{entrylist}
+\begin{entrylist}
+  \entry
+    {2011--2012}
+    {Neuropharmacology Lab}
+    {Department of Experimental and Health Sciences, UPF}
+    {Technician}
+  \entry
+    {2011}
+    {Central Nervous System Unit}
+    {Pharmaceutical R\&D Centre, Ferrer Internacional}
+    {Researcher during my MSc internship}
+  \entry
+    {2010}
+    {Keypoint CRO}
+    {Grupo Keypoint}
+    {Clinical Research Associate during my BSc internship}
+  \entry
+    {2008}
+    {Neuropharmacology Lab}
+    {Department of Experimental and Health Sciences, UPF}
+    {Student during a summer internship}
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{publications}
+
+
+\begin{itemize}
+    \item Cuscó P, Filion GJ. Zerone: a ChIP-seq discretizer for
+        multiple replicates with built-in quality control.
+        Bioinformatics. 2016;32(19):2896-902.
+    \item Corrales M, Cuscó P, Usmanova DR, Chen HC, Bogatyreva NS,
+        Filion GJ, Ivankov DN. Machine Learning: How Much Does It
+        Tell about Protein Folding Rates? PLoS One.
+        2015;10(11):e0143166.
+    \item Zorita E, Cuscó P, Filion GJ. Starcode: sequence clustering
+        based on all-pairs search. Bioinformatics. 2015;31(12):1913-9.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	COURSES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{courses}
+
+\begin{entrylist}
+  \entry
+    {2017}
+    {From Science to Market}
+    {Universitat de Barcelona / Universitat Politècnica de Catalunya}
+    {A course on entrepreneurship focused on technology-based
+    companies.}
+  \entry
+    {2014}
+    {Algorithms: Design and Analysis, Part 1}
+    {Stanford University}
+    {An in-depth review of classical algorithms and data structures.}
+  \entry
+    {2013}
+    {Machine Learning}
+    {Stanford University}
+    {A reference on the fundamentals and good practices of
+    machine learning.}
+  \entry
+    {2012}
+    {Web Fundamentals, JavaScript, jQuery, PHP, Python}
+    {Codecademy}
+    {Several courses on different programming languages.}
+  \entry
+    {2012}
+    {Introduction to Computing Principles}
+    {Stanford University}
+    {An introduction to the key ideas of computing.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
