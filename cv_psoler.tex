@@ -1,0 +1,283 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% Modified:
+% Pol Cuscó
+% Bibliography works with bibtex 3.3+ and biber.
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the
+                              % square bracket to remove colors from
+                              % this template for printing
+
+\usepackage{fontawesome}
+
+%\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+\newfontfamily{\FA}{FontAwesome}
+
+% Your name and current job title/field
+\header{Paula}{  Soler Vila}{Pharmacist \& Bioinformatician }
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+  \section{Contact}
+   Robrenyo 72-74, 3-4
+   08014 Barcelona
+    Spain
+   \includegraphics[scale=0.6]{phonelogo.png}
+   \href{tel:+34660721102}{+34 660 72 11 02}
+  \includegraphics[scale=0.03]{emaillogo.jpeg}
+  \href{mailto:paulasolervila@gmail.com}{paulasolervila@gmail}
+  %{\FA \faLinkedinSign}
+  \includegraphics[scale=0.02]{linkedinlogo.jpeg}
+  \href{https://www.linkedin.com/in/paula-soler-vila-11b008a3/}{linkedin/paula-soler}
+  %{\FA \faGithubSign}
+  \includegraphics[scale=0.08]{githublogo.jpeg}
+  \href{https://github.com/paulasoler}{github.com/paulasoler}
+  \section{Languages}
+  Valencian
+  Spanish
+  English
+  \section{Programming}
+  R {\FA \faStar \faStar \faStar}
+  Python {\FA \faStar \faStar}
+  HTML {\FA \faStar}
+  Shell scripting {\FA \faStar \faStar}
+  \LaTeX {\FA \faStar \faStar}
+  \section{Skills}
+  \includegraphics[scale=0.12]{computer.jpeg}
+  \textbf{Dry-lab}
+   Algorithm design
+   Biostatistics
+   Multi-omics analysis
+  \includegraphics[scale=0.04]{wet.jpeg}
+  \textbf{Wet-lab}
+   Cell culture
+   Hi-C*
+   Imaging
+\end{aside}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{entrylist}
+
+\entry
+{2015--2019}
+{PhD {\normalfont in Biomedicine}}
+{CNAG-CRG --- Universitat Pompeu Fabra}
+{\emph{Multi-Scale Study of the Genome Architecture and Its Dynamical Facets}}
+
+\entry
+{2012--2014}
+{MSc {\normalfont in Bioinformatics}}
+{Biomedicine Institute (IBV-CSIC) --- Universitat de València}
+{\emph{Modelización estructural in silico del cambio conformacional descrito por el Switch I de Rbg1, GTPasa involucrada en la función ribosomal.}}
+
+\entry
+{2007--2012}
+{BSc {\normalfont of Pharmacy}}
+{Universitat de València}
+{}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{entrylist}
+
+\entry
+{2015--2019}
+{CNAG-CRG, Structural Genomics Lab}
+{Barcelona}
+{\emph{Biomedicine PhD student}\\
+Studied the hierarchical 3D organization of the chromatin in the nucleus and its direct impact in genome maintenance and gene regulation.
+Developed experimental and bioinformatics methods to
+generate and analyse multi-omics data, specifically
+High-throughput Chromosome Conformation Capture (3C*) tecniques.
+}\\
+
+\entry
+{2018}
+{Harvard Medical School, Department of Genetics}
+{Boston, USA}
+{\emph{Short-term research stay}\\
+Performed a highly specialized
+OligoSTORM protocol to walk over the chromatin path of identified
+transition regions characterized by a sharp change between eu- and heterochromatin in physiological and malignant cells.
+}\\
+
+\entry
+{2017--2019}
+{ETSE, Universitat de València}
+{València}
+{\emph{Master in Bioinformatics - External Teacher}\\
+Taught of structural bioinformatics. This subject presents theoretical and practical knowledge to
+determine the 3D structure of proteins and nucleic acids. Specifically, it involves
+data search, characterization, analysis and visualization of structures,
+as well as prediction and modeling of molecular interactions.}\\
+\entry
+{2017}
+{Centre for Genomic Regulation (CRG)}
+{Barcelona}
+{\emph {Chromosomal Conformation Capture - Teaching Assistant} \\
+An overview of different methods to study the 3D organization of the genome. Specifically, the course involved experimental and computational aspects of the Hi-C technique.}\\
+\entry
+{2013--2014}
+{Institute of Biomedicine of Valencia}
+{València}
+{\emph {MSc internship}
+Generation, validation and comparison of molecular 3D models of active forms of some GTPases
+structurally solved in the laboratory in the inactive forms. Development of bioinformatics tools to identify residues represented in the Protein Data Bank of a given molecule.}
+\end{entrylist}
+
+\begin{entrylist}
+\entry
+{2013}
+{Institute for Health Research INCLIVA}
+{València}
+{\emph {Internship} \\
+Support to the development of platforms and software to massively process experimental genomic data. \\
+}
+\entry
+{2013}
+{Erasmus Center}
+{Burjassot}
+{\emph {Teaching Assistant} \\
+Taught individual and intensive general chemistry classes for Pharmacy students.\\
+}
+\entry
+{2012}
+{Hospital Clínico Universitario de Valencia}
+{València}
+{\emph {BSc internship} \\
+Worked at the Pharmacy service of the Hospital Clínico Universitario de Valencia perfoming tasks such as pharmacokinetic analyses, pharmaceutical technology, implementation of clinical trials, drug information, study and assessment of treatment in chronic patients and personalized pharmaceutical care. \\
+}
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\begin{itemize}
+    \item \textbf{Dynamics of genome architecture and chromatin function during human B cell differentiation and neoplastic transformation}.\\
+   \emph{ Vilarrasa-Blasi, R.,  \textbf{Soler-Vila, P.},  Verdaguer-Dot, N.,  Russinol, N.,  Di Stefano, M.,  Chapaprieta, V.,  Clot, G.,  Farabella, I.,  Cusco, P.,  Agirre, X.,  Prosper, F.,  Beekman, R.,  Bea, S.,  Colomer, D.,  Gut, I.,  Stunnenberg, H.,  Campo, E.,  Marti-Renom, M.A. and Martin-Subero, J.I.}.\\
+BioRxiv (2019) preprint
+    \item \textbf{Hierarchical chromatin organization detected by TADpole}.\\
+    \emph{  \textbf{Soler-Vila, P.},  Cusco Pons, P.,  Farabella, I.,  Di Stefano, M. and Marti-Renom, M.A.}.\\
+	BioRxiv (2019) preprint
+    \item \textbf{Walking along chromosomes with super-resolution imaging, contact maps, and integrative modeling"}
+    \emph{ Nir, G.,  Farabella, I.,  Pérez Estrada, C.,   Ebeling, C.G.,  Beliveau, B.J.,  Sasaki, H.M.,  Lee, S.H.,  Nguyen, S.C.,  McCole, R.B.,  Chattoraj, S.,  Erceg, J.,  Abed, J.A.,  Martins, N.M.C.,   Nguyen, H.Q.,  Hannan, M.A.,  Russell, S.,  Durand, N.C.,  Rao, S.S.P.,  Kishi, J.Y.,  \textbf{Soler-Vila, P.},  Di Pierro, M.,  Onuchic, J.N.,  Callahan, S.,  Schreiner, J.,  Stuckey, J.,  Yin, P.,  Lieberman Aiden, E.,  Marti-Renom, M.A. and Wu, C.T}.\\
+PLOS Genetics (2018) 14(12) e1007872
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\vspace{5mm}
+
+\section{Complementary formation}
+
+\begin{entrylist}
+
+%------------------------------------------------
+\entry
+{2018}
+{Image processing based on the Fiji distribution of ImageJ}
+{CRG}
+
+\entry
+{2016}
+{3DAROC16}
+{Instituto Gulbenkian de Ciencias, Oerias (Portugal)}
+{3C-based data analysis and 3D reconstruction of chromatin folding}
+
+\entry
+{2015}
+{Chromosomal conformation course}
+{Center of Genomic Regulation, CRG}
+
+\entry
+{2014}
+{R Programming}
+{Coursera}
+
+\entry
+{2011}
+{Web Page Development course}
+{Universitat de València}
+
+\end{entrylist}
+
+\vspace{5mm}
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\textbf{Professional:} computer science, biostatistical analysis, epigenomics and molecular biology. \\ \textbf{Personal:} teaching, learning, gaming, trekking and popular culture. \\
+
+%----------------------------------------------------------------------------------------
+%	GRANTS SECTION
+%----------------------------------------------------------------------------------------
+\section{Honors-Awards}
+
+\begin{entrylist}
+
+\entry
+{2018}
+{The Company of biologists journal Travel Fellowship}
+{}
+
+\entry
+{2018}
+{Boehringer Ingelheim Travel Grant}
+{}
+
+\entry
+{2015}
+{Beca para Formación de Personal Investigador (FPI) }
+{}
+
+\end{entrylist}
+
+\section{Outreach activities}
+
+\begin{entrylist}
+
+\entry
+{2019}
+{Días de Ciencia y Deportes - Centre Obert Adolescent Raval, Barcelona (ES)}
+{}
+{This event has received funding from the European Union’s Horizon 2020 research and innovation programme under the MSC
+grant agreement Nº:752415}
+
+\end{entrylist}
+
+\end{document}
